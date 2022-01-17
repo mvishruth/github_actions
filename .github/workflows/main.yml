@@ -21,7 +21,7 @@ jobs:
         R -e 'install.packages(c("dplyr", "ralger", "magrittr"))'
     # Run R script
     - name: scrap
-      run: Rscript /github_actions/crypto_scrapper.R
+      run: Rscript crypto_scraper.R
       
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
