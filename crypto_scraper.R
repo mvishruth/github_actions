@@ -11,9 +11,8 @@ data <- ralger::table_scrap("https://goldprice.org/cryptocurrency-price") %>%
 
 #write data to file,  new data in append mode
 
-readr::write_excel_csv(data, "data/data.csv",
+write.table(data, "data/data.csv",
             sep = ",", col.names = !file.exists("data/data.csv"),
-            append = T, row.names = F
-            )
+            append = T, row.names = F)
 
 
